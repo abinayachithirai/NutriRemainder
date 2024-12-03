@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popupMessageGeneration.css">
+    <title>POPUP MESSAGE GENERATION</title>
+</head>
+<body>
+    <div id="Container">
+        <div id="topNav">
+        <h2>NUTRI REMAINDER</h2>
+        <div id="digitalClock">
+            <span id="hours" class="time"></span>
+            <span id="minutes" class="time"></span>
+            <span id="seconds" class="time"></span>
+            <span id="ampm"></span>
+        </div>
+        <button id="dietPlan" onclick="dietPlan()">Show Diet Plan</button>
+        </div>
+        <div>
+        <div id="imgContainer">
+        <img src="popup1.webp" alt="popup1" id="popup1">
+        <img src="popup2.webp" alt="popup2" id="popup2">
+        <img src="popup3.webp" alt="popup3" id="popup3">
+        <img src="popup4.webp" alt="popup4" id="popup4">
+        <img src="popup5.webp" alt="popup5" id="popup5">
+        <img src="popup6.webp" alt="popup6" id="popup6">
+        </div>
+        </div>
+    </div>
+
+    <div id="table">
+        <div id="heading">
+        <span>Diet Table</span>
+        <button id="close" onclick="closed()">X</button>
+        </div>
+        <div>
+        <table>
+            <tr>
+            <th>Meal</th>
+            <th>Suggested Time</th>
+            <th>Calories</th>
+            <th>Foods (for guidance)</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>8:00 AM</td>
+                <td>400</td>
+                <td>Oatmeal with berries, Greek yogurt, eggs with whole-grain toast, smoothie with greens and fruits, avocado toast</td>
+            </tr>
+            <tr>
+                <td>Snack 1</td>
+                <td>10:30 AM</td>
+                <td>150</td>
+                <td>Handful of mixed nuts, Greek yogurt with honey, fresh fruit (apple, banana, or berries), protein bar</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>1:00 PM</td>
+                <td>500</td>
+                <td>Grilled chicken salad with mixed greens, quinoa bowl with vegetables, rice with grilled salmon and veggies, veggie wrap with hummus</td>
+            </tr>
+            <tr>
+                <td>Snack 2</td>
+                <td>3:30 PM</td>
+                <td>150</td>
+                <td>Cottage cheese with fruit, sliced vegetables with hummus, small handful of almonds, green smoothie with spinach and apple</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>7:00 PM</td>
+                <td>600</td>
+                <td>Grilled vegetables with tofu or chicken, baked sweet potato with a side salad, stir-fried veggies with lean protein (like chicken or fish), lentil soup with a side of whole-grain bread</td>
+            </tr>
+            <tr>
+                <td>Snack 3</td>
+                <td>8:30 PM</td>
+                <td>200</td>
+                <td>Herbal tea, small bowl of mixed berries, dark chocolate square, handful of trail mix</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+<script src="popupMessageGeneration.js"></script>
+</body>
+</html>

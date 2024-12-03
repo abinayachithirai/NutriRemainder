@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Container{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: #6A9758;
+}
+#topNav{
+    margin: auto;
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+span{
+    font-size: 1.2em;
+    color: #7E9B91;
+}
+#dietPlan{
+    height: 70%;
+    width: 12%;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #7E9B91;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 3px #9FBE9B;
+}
+.time{
+    height: 5vh;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px inset #E3AF4A;
+}
+#digitalClock{
+    border-radius: 5px;
+    box-shadow: 0 0 2px 3px #9FBE9B;
+    height: 70%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2{
+    text-align: center;
+}
+#imgContainer{
+    height: 80vh;
+    width: 100%;
+}
+#imgContainer img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#popup2,#popup3,#popup4,#popup5,#popup6{
+    display : none;
+}
+#table{
+    height: 80vh;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    backdrop-filter: blur(30px);
+    left: 15%;
+    display: none;
+    margin: auto;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(11, 88%, 39%);
+    font-size: 1.1em;
+}
+button{
+    cursor: pointer;
+}
+#heading span{
+    margin: 6px;
+    color: hsl(11, 88%, 39%);
+}
+#close{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    float: right;
+    margin: 6px;
+    color: hsl(11, 88%, 39%);
+    font-size: 1.1em;
+}
+table{
+    height: 100%;
+    width: 100%;
+}
+td,th{
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px;
+    color: hsl(11, 88%, 39%);
+}
+table,tr,td,th{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+/* General Styles for Small Screens */
+@media screen and (max-width: 768px) {
+    #Container {
+        height: auto; /* Allow content to adjust dynamically */
+        flex-direction: column;
+    }
+
+    #topNav {
+        justify-content: space-evenly;
+        height: auto;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #digitalClock {
+        width: 30%;
+        height: 8vh;
+    }
+
+    .time {
+        height: 6vh;
+        width: 5vw;
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    #dietPlan {
+        width: 20%;
+        height: 8vh;
+        font-size: 1em;
+    }
+
+    #imgContainer img {
+        object-fit: contain;
+        height: auto;
+    }
+
+    #table {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+    }
+
+    table, td, th {
+        font-size: 0.9em;
+    }
+
+    #heading {
+        font-size: 0.9em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #close {
+        font-size: 1em;
+        margin: 0;
+    }
+}
+
+/* Additional Styling for Extra Small Screens (Phones) */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+    #topNav{
+        flex-direction: column;
+    }
+    #dietPlan {
+        height: 8vh;
+        width: 60%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .time {
+        height: 6vh;
+        width: 5vh;
+        font-size: 1em;
+    }
+
+    #digitalClock {
+        height: 8vh;
+        width: 64%;
+        gap: 3px;
+    }
+
+    #table {
+        width: 100%;
+        top: 5%;
+        left: 0;
+    }
+
+    table, td, th {
+        font-size: 0.8em;
+    }
+}
